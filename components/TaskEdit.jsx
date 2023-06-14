@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 export default function TaskEdit({ task, tasks, setTasks, setSelectedTask }) {
-  const [editedTitle, setEditedTitle] = useState(task.title);
-  const [editedDescription, setEditedDescription] = useState(task.description);
+  const [editedTitle, setEditedTitle] = useState(task.title); // for edit task
+  const [editedDescription, setEditedDescription] = useState(task.description); // for edit task
 
   const saveTask = (taskId, editedTitle, editedDescription) => {
     const updatedTasks = tasks?.map((task) => {
@@ -17,11 +17,11 @@ export default function TaskEdit({ task, tasks, setTasks, setSelectedTask }) {
     });
     setTasks(updatedTasks);
     setSelectedTask(null);
-  };
+  }; // save task for edit task (set selected task to null)
 
   const handleSave = () => {
     saveTask(task.id, editedTitle, editedDescription);
-  };
+  }; // handle save task for edit task
 
   return (
     <div className="flex flex-col bg-white">

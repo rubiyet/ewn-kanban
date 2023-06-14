@@ -1,7 +1,7 @@
 export default function Task({ task }) {
   const onDragStart = (e, taskId) => {
     e.dataTransfer.setData("taskId", taskId);
-  };
+  }; // on drag start (set data transfer to task id)
 
   return (
     <div

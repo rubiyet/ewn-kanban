@@ -4,11 +4,11 @@ import TaskEdit from "@/components/TaskEdit";
 import AllTaskDeleteFromTrash from "@/components/AllTaskDeleteFromTrash";
 
 export default function TaskList({ title, tasks, setTasks, filterTasks }) {
-  const [selectedTask, setSelectedTask] = useState(null);
+  const [selectedTask, setSelectedTask] = useState(null); // for edit task
 
   const editTask = (taskId) => {
     setSelectedTask(taskId);
-  };
+  }; // for edit task (set selected task) 
 
   return (
     <div className="flex flex-col w-64 select-none">

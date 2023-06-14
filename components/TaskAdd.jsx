@@ -1,9 +1,9 @@
 import { useState } from "react";
 
 export default function TaskAdd({ tasks, setTasks }) {
-  const [newTaskTitle, setNewTaskTitle] = useState("");
-  const [newTaskDescription, setNewTaskDescription] = useState("");
-  const [errorMessages, setErrorMessages] = useState();
+  const [newTaskTitle, setNewTaskTitle] = useState(""); // for add new task (title)
+  const [newTaskDescription, setNewTaskDescription] = useState(""); // for add new task (description)
+  const [errorMessages, setErrorMessages] = useState(); // for add new task (error messages)
 
   const addNewTask = () => {
     if (!newTaskTitle || !newTaskDescription) {
@@ -20,7 +20,7 @@ export default function TaskAdd({ tasks, setTasks }) {
     setNewTaskTitle("");
     setNewTaskDescription("");
     setErrorMessages("");
-  };
+  }; // add new task (set new task title and description to empty string) (set error messages to empty string) (set tasks to new task) 
 
   return (
     <div className="py-8 select-none space-y-1">

@@ -3,7 +3,7 @@ export default function AllTaskDeleteFromTrash({ tasks, setTasks }) {
     const updatedTasks = tasks.filter((task) => task.status !== "TRASH");
     localStorage.removeItem("tasks");
     setTasks(updatedTasks);
-  };
+  }; // delete tasks from trash tasks (set tasks to local storage)
 
   return (
     <button

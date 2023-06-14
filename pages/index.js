@@ -4,25 +4,25 @@ import TaskAdd from "@/components/TaskAdd";
 import Head from "next/head";
 
 export default function Index() {
-  const list = ["TODO", "DOING", "DONE", "TRASH"];
-  const [tasks, setTasks] = useState([]);
+  const list = ["TODO", "DOING", "DONE", "TRASH"]; // List of status
+  const [tasks, setTasks] = useState([]); // State for tasks
 
   useEffect(() => {
     const storedTasks = localStorage.getItem("tasks");
     if (storedTasks) {
       setTasks(JSON.parse(storedTasks));
     }
-  }, []);
+  }, []); // Get tasks from local storage
 
   useEffect(() => {
     if (tasks.length > 0) {
       localStorage.setItem("tasks", JSON.stringify(tasks));
     }
-  }, [tasks]);
+  }, [tasks]); // Set tasks to local storage
 
   const onDragOver = (e) => {
     e.preventDefault();
-  };
+  }; // Prevent default
 
   const onDrop = (e, status) => {
     const taskId = e.dataTransfer.getData("taskId");
@@ -36,7 +36,7 @@ export default function Index() {
       return task;
     });
     setTasks(updatedTasks);
-  };
+  }; // Update status of task when drop to new status column (list)
 
   return (
     <div>
