@@ -19,6 +19,7 @@ export default function TaskAdd({ tasks, setTasks }) {
     setTasks([...tasks, newTask]);
     setNewTaskTitle("");
     setNewTaskDescription("");
+    setErrorMessages("");
   };
 
   return (
