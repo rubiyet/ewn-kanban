@@ -41,7 +41,7 @@ export default function TaskAdd({ tasks, setTasks }) {
       />
       <button
         onClick={addNewTask}
-        className="px-5 py-1 bg-black border-2 border-black text-white font-semibold rounded hover:bg-green-600"
+        className="px-5 py-1 bg-black border-2 border-black text-white font-semibold rounded hover:bg-gray-600"
       >
         Add Task
       </button>
