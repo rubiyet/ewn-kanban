@@ -1,38 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js App
 
-## Getting Started
+This is a simple Next.js application.
 
-First, run the development server:
+## How to Create a Next.js App
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+To create a Next.js app, follow these steps:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Open your terminal or command prompt.
+2. Navigate to the directory where you want to create your app.
+3. Run the following command to create a new Next.js app: npx create-next-app ewn-kanban
+4. Once the command completes, navigate into the app's directory: cd ewn-kanban
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## How to Run the Application Locally
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+To run the Next.js application locally, follow these steps:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. Make sure you are in the root directory of your app in the terminal.
+2. Run the following command to start the development server: npm run dev (This will compile the code and start the app in development mode.)
+3. You should now see your Next.js application running locally.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## How to Run the Application from GitHub
 
-## Learn More
+To run the Next.js application from a GitHub repository, follow these steps:
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository to your local machine using Git. Run the following command: git clone https://github.com/rubiyet/ewn-kanban
+2. Navigate into the cloned directory: cd ewn-kanban
+3. Install the project dependencies by running the following command: npm install
+4. Once the dependencies are installed, start the development server: npm run dev
+5. Open your web browser and visit `http://localhost:3000` (or another specified port if mentioned) to see the Next.js application running.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Note: Ensure that you have Node.js and npm (Node Package Manager) installed on your system before running the above commands. If you haven't installed them yet, please refer to the official Node.js website (https://nodejs.org) for instructions on how to download and install Node.js.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+If there are any specific requirements or configurations mentioned in the repository's README, please follow those instructions accordingly.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Happy coding! 
