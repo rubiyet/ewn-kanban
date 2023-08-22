@@ -41,9 +41,9 @@ export default function Index() {
   return (
     <div>
       <Head>
-        <title>EWN Bangladesh</title>
+        <title>Kanbanboard/</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="EWN Bangladesh" />
+        <meta name="description" content="Kanbanboard" />
         <link rel="icon" type="image/png" sizes="16x16" href="/icon.png" />
       </Head>
       <div className="flex flex-col items-center justify-center">
